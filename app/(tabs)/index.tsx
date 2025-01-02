@@ -70,6 +70,7 @@ type Props = {};
 const Page = (props: Props) => {
   const { top: safeTop } = useSafeAreaInsets();
   const [breakingNews, setBreakingNews] = useState<NewsDataType[]>([]);
+  const [breakingNews, setBreakingNews] = useState<NewsDataType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -92,7 +93,7 @@ const Page = (props: Props) => {
 
   const getNews = async () => {
     try {
-      const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=5`;
+      const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10`;
       const response = await axios.get(URL);
 
       if (response && response.data) {
