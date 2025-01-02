@@ -18,6 +18,7 @@ const NewsList = ({ newsList }: Props) => {
                         <Text style={styles.itemTitle}>{item.title}</Text>
                         <View>
                             <Image source={{uri: item.source_icon}} style={styles.itemSourceImg}/>
+                            <Text>{item.source_name}</Text>
                         </View>
                     </View>
                 </View>
