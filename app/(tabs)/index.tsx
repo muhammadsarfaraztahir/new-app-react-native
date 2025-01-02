@@ -70,11 +70,12 @@ type Props = {};
 const Page = (props: Props) => {
   const { top: safeTop } = useSafeAreaInsets();
   const [breakingNews, setBreakingNews] = useState<NewsDataType[]>([]);
-  const [breakingNews, setBreakingNews] = useState<NewsDataType[]>([]);
+  const [news, setNews] = useState<NewsDataType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     getBreakingNews();
+    getNews();
   }, []);
 
   const getBreakingNews = async () => {
