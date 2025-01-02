@@ -3,15 +3,15 @@ import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 
 type Props = {}
 
-const Header = (props: Props) => {
+const Loading = (props: Props) => {
     return (
         <View style={styles.container} >
-            <Text>Lo</Text>
+            <Text>Loading</Text>
         </View>
     )
 }
 
-export default Header;
+export default Loading;
 
 const styles = StyleSheet.create({
     container: {
