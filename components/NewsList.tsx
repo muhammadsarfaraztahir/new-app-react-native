@@ -63,7 +63,9 @@ const styles = StyleSheet.create({
          color: Colors.black,
     },
     itemSourceInfo:{
-         
+         flexDirection: 'row',
+         gap: 8,
+         alignItems: 'center', 
     },
 
 
