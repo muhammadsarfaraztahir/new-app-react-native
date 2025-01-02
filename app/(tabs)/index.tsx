@@ -89,8 +89,8 @@ const Page = (props: Props) => {
       console.log("Error Message: ", err.message);
     }
   }; 
-  
-  const getBreakingNews = async () => {
+
+  const getNews = async () => {
     try {
       const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=5`;
       const response = await axios.get(URL);
