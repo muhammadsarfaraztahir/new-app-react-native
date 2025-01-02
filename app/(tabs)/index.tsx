@@ -96,6 +96,9 @@ const Page = (props: Props) => {
   const getNews = async (category: string = '') => {
     try {
       let categoryString = '';
+      if( category.length !== 0 ){
+        categoryString = `&category=${category}`
+      }
       const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10`;
       const response = await axios.get(URL);
 
