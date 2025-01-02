@@ -93,7 +93,7 @@ const Page = (props: Props) => {
     }
   }; 
 
-  const getNews = async () => {
+  const getNews = async (category: string = '') => {
     try {
       const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10`;
       const response = await axios.get(URL);
