@@ -63,6 +63,7 @@ import { ActivityIndicator, ScrollView, StyleSheet, Text, View } from "react-nat
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Categories from "@/components/Categories";
 import NewsList from "@/components/NewsList";
+import Loading from "@/components/Loading";
 
 
 type Props = {};
@@ -116,7 +117,7 @@ const Page = (props: Props) => {
       <Header />
       {/* <SearchBar /> */}
       {isLoading ? (
-        <ActivityIndicator size={"large"} />
+       <Loading  size={'large'} />
       ) : (
         <BreakingNews newsList={breakingNews} />
       )}
