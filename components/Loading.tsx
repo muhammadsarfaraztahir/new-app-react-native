@@ -6,7 +6,7 @@ type Props = {}
 const Header = (props: Props) => {
     return (
         <View style={styles.container} >
-            
+            <Text>Lo</Text>
         </View>
     )
 }
