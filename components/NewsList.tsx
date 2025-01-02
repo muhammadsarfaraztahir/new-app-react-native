@@ -54,7 +54,9 @@ const styles = StyleSheet.create({
          textTransform: 'capitalize',
     },
     itemTitle:{
-
+         fontSize: 12,
+         fontWeight: '600',
+         color: Colors.black,
     },
     
 
