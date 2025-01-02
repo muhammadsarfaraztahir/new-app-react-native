@@ -67,6 +67,12 @@ const styles = StyleSheet.create({
          gap: 8,
          alignItems: 'center', 
     },
+    itemSourceImg:{
+
+    },
+    itemSourceName:{
+
+    },
 
 
 })
