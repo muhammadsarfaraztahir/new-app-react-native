@@ -1,8 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator, ActivityIndicatorProps } from 'react-native'
 
-type Props = {}
-
 const Loading = (
     props: React.JSX.IntrinsicAttributes &
         React.JSX.IntrinsicClassAttributes<ActivityIndicator> &
