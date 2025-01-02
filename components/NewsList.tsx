@@ -68,10 +68,12 @@ const styles = StyleSheet.create({
          alignItems: 'center', 
     },
     itemSourceImg:{
-
+          width: 20,
+          height: 20,
+          borderRadius: 20,
     },
     itemSourceName:{
-
+  
     },
 
 
