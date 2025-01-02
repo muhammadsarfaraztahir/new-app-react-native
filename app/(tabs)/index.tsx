@@ -121,7 +121,7 @@ const Page = (props: Props) => {
         <BreakingNews newsList={breakingNews} />
       )}
       <Categories  onCategoryChanged={onCatChanged}/>
-      <NewsList newsList={breakingNews}/> 
+      <NewsList newsList={news}/> 
     </ScrollView>
   );
 };
