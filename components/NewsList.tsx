@@ -18,7 +18,7 @@ const NewsList = ({ newsList }: Props) => {
                         <Text style={styles.itemTitle}>{item.title}</Text>
                         <View style={styles.itemSourceInfo}>
                             <Image source={{uri: item.source_icon}} style={styles.itemSourceImg}/>
-                            <Text style={styles.itemSource}>{item.source_name}</Text>
+                            <Text style={styles.itemSourceName}>{item.source_name}</Text>
                         </View>
                     </View>
                 </View>
