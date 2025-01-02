@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Colors'
 import { NewsDataType } from '@/types'
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
@@ -48,7 +49,9 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     itemCategory:{
-
+         fontSize: 12,
+         color: Colors.darkGrey,
+         textTransform: 'capitalize',
     },
     itemTitle:{
 
