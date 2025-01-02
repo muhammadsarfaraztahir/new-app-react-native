@@ -99,7 +99,7 @@ const Page = (props: Props) => {
       const response = await axios.get(URL);
 
       if (response && response.data) {
-        setBreakingNews(response.data.results);
+        setNews(response.data.results);
         setIsLoading(false);
       }
     } catch (err: any) {
@@ -109,7 +109,8 @@ const Page = (props: Props) => {
 
   const onCatChanged = (Category: string)=>{
     console.log('category', Category);
-    
+    setNews([]);
+    getNews(Category);
     
   }
 
