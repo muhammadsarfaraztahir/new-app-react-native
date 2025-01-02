@@ -110,6 +110,7 @@ const Page = (props: Props) => {
   const onCatChanged = (Category: string)=>{
     console.log('category', Category);
     
+    
   }
 
   return (
