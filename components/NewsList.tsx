@@ -2,6 +2,7 @@ import { Colors } from '@/constants/Colors'
 import { NewsDataType } from '@/types'
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
+import Loading from './Loading'
 
 type Props = {
     newsList: Array<NewsDataType>
@@ -10,8 +11,11 @@ type Props = {
 const NewsList = ({ newsList }: Props) => {
     return (
         <View style={styles.container} >
-            {newsList.map((item, index) => (
-                <View key={index} style={styles.itemContainer}>
+            {newsList.length == 0 ? (
+                <Loading  size={'large'}/>
+            ):(
+                newsList.map((item, index) => (
+                    <View key={index} style={styles.itemContainer}>
                     <Image source={{ uri: item.image_url }} style={styles.itemImage} />
                     <View style={styles.itemInfo}>
                         <Text style={styles.itemCategory}>{item.category}</Text>
@@ -22,7 +26,8 @@ const NewsList = ({ newsList }: Props) => {
                         </View>
                     </View>
                 </View>
-            ))}
+            ))
+        )}
         </View>
     )
 }
