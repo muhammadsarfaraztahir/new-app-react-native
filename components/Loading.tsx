@@ -1,9 +1,13 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator  } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator, ActivityIndicatorProps  } from 'react-native'
 
 type Props = {}
 
-const Loading = (props: Props) => {
+const Loading = (
+    props: React.JSX.IntrinsicAttributes &
+React.JSX.IntrinsicClassAttributes<ActivityIndicator> &
+Readonly<ActivityIndicatorProps>
+) => {
     return (
         <View style={styles.container} >
             <ActivityIndicator {...props}/>
