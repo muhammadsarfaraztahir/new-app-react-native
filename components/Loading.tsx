@@ -1,16 +1,16 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator, ActivityIndicatorProps  } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator, ActivityIndicatorProps } from 'react-native'
 
 type Props = {}
 
 const Loading = (
     props: React.JSX.IntrinsicAttributes &
-React.JSX.IntrinsicClassAttributes<ActivityIndicator> &
-Readonly<ActivityIndicatorProps>
+        React.JSX.IntrinsicClassAttributes<ActivityIndicator> &
+        Readonly<ActivityIndicatorProps>
 ) => {
     return (
         <View style={styles.container} >
-            <ActivityIndicator {...props}/>
+            <ActivityIndicator {...props} />
         </View>
     )
 }
@@ -19,9 +19,9 @@ export default Loading;
 
 const styles = StyleSheet.create({
     container: {
-       flex: 1,
-       justifyContent: 'center',
-       alignItems: 'center',
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
-    
+
 })
