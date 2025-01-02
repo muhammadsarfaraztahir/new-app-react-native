@@ -73,7 +73,9 @@ const styles = StyleSheet.create({
           borderRadius: 20,
     },
     itemSourceName:{
-  
+           fontSize: 10,
+           fontWeight: '400',
+           color: Colors.darkGrey,
     },
 
 
