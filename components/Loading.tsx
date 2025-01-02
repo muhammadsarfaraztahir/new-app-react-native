@@ -1,12 +1,12 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image, ActivityIndicator  } from 'react-native'
 
 type Props = {}
 
 const Loading = (props: Props) => {
     return (
         <View style={styles.container} >
-            <Text>Loading</Text>
+            <ActivityIndicator {...props}/>
         </View>
     )
 }
