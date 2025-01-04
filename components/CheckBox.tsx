@@ -2,7 +2,7 @@ import { Colors } from '@/constants/Colors';
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
-import Animated from 'react-native-reanimated';
+import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 
 type Props = {
     label: string;
@@ -11,7 +11,7 @@ type Props = {
 }
 
 const CheckBox = ({label, checked, onPress}: Props) => {
-    const rnAnimatedContainerStyle = 
+    const rnAnimatedContainerStyle = useAnimatedStyle
     return (
         <Animated.View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
