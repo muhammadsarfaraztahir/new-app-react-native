@@ -1,3 +1,4 @@
+import { Colors } from '@/constants/Colors';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 
@@ -27,5 +28,6 @@ const styles = StyleSheet.create({
     },
     label:{
         fontSize: 14,
+        color: Colors.tint,
     },
 })
