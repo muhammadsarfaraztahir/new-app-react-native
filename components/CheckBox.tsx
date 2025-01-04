@@ -1,4 +1,5 @@
 import { Colors } from '@/constants/Colors';
+import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 
@@ -13,7 +14,7 @@ const CheckBox = ({label, checked, onPress}: Props) => {
         <View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
            <View>
-            
+            <AntDesign name='checkcircle' size={}/>
            </View>
         </View>
     )
