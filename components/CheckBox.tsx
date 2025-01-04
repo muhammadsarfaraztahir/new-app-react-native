@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         borderColor: Colors.black,
         borderRadius: 32,
         paddingVertical: 8,
-        paddingHorizontal: 16,
+        // paddingHorizontal: 16,
     },
     label: {
         fontSize: 14,
