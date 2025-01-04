@@ -33,7 +33,7 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
                 { duration: 150 }
             ),
         }
-    });
+    } , [checked]);
 
     return (
         <Animated.View style={[styles.container , rnAnimatedContainerStyle]} >
