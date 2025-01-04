@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
         paddingVertical: 8,
     },
     label:{
-        
+        fontSize: 14,
     },
 })
