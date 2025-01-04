@@ -44,6 +44,7 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
              entering={FadeIn.duration(350)}
              exiting={FadeOut} 
              >
+                
                 <AntDesign name='checkcircle' size={14} color={Colors.tint} />
             </Animated.View>
               )}
