@@ -12,6 +12,9 @@ const CheckBox = ({label, checked, onPress}: Props) => {
     return (
         <View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
+           <View>
+            
+           </View>
         </View>
     )
 }
