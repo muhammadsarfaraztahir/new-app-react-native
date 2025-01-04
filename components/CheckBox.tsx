@@ -13,7 +13,7 @@ const CheckBox = ({label, checked, onPress}: Props) => {
     return (
         <View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
-           <View>
+           <View style={styles.label}>
             <AntDesign name='checkcircle' size={14} color={Colors.tint} />
            </View>
         </View>
