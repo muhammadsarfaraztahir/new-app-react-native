@@ -16,7 +16,7 @@ const discover = (props: Props) => {
            <Text style={styles.title}>Category</Text>
            <View style={styles.listContainer}>
             {newsCategoryList.map((item)=>(
-                <CheckBox key={item.id} label={item.title} checked/>
+                <CheckBox key={item.id} label={item.title} checked={item.selected}/>
             ))}
            </View>
         </View>
