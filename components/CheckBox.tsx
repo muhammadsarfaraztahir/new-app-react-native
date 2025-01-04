@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     },
     label:{
         fontSize: 14,
-        color: Colors.tint,
+        color: Colors.black,
     },
     iconWrpper:{
        marginLeft: 8,
