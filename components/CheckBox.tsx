@@ -24,7 +24,7 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
             paddingLeft: 16,
             paddingRight: checked ? 10 : 16,
         };
-    });
+    }, [checked]);
 
     const rnTextStyle = useAnimatedStyle(()=> {
         return{
