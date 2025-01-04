@@ -37,7 +37,7 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
 
     return (
         <Animated.View style={[styles.container , rnAnimatedContainerStyle]} >
-            <Text style={styles.label}>{label}</Text>
+            <Animated.Text style={[styles.label, rnTextStyle]}>{label}</Animated.Text>
             <View style={styles.iconWrpper}>
                 <AntDesign name='checkcircle' size={14} color={Colors.tint} />
             </View>
