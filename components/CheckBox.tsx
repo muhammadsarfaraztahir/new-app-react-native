@@ -2,7 +2,7 @@ import { Colors } from '@/constants/Colors';
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
-import Animated, { useAnimatedStyle } from 'react-native-reanimated';
+import Animated, { useAnimatedStyle, withTiming } from 'react-native-reanimated';
 
 type Props = {
     label: string;
@@ -13,7 +13,7 @@ type Props = {
 const CheckBox = ({label, checked, onPress}: Props) => {
     const rnAnimatedContainerStyle = useAnimatedStyle(()=>{
         return{
-            backgroundColor: checked ? "rgba(239, 142, 82, 0.1)" : 'transparent'
+            backgroundColor: withTiming ( checked ? "rgba(239, 142, 82, 0.1)" : 'transparent', {duration: })
         }
     })
     return (
