@@ -28,7 +28,10 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
 
     const rnTextStyle = useAnimatedStyle(()=> {
         return{
-            color: 
+            color: withTiming(
+                checked ? Colors.tint : Colors.black,
+                { duration: 150 }
+            ),
         }
     });
 
