@@ -2,7 +2,7 @@ import { Colors } from '@/constants/Colors';
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
-import Animated, { useAnimatedStyle, withTiming } from 'react-native-reanimated';
+import Animated, { FadeIn, useAnimatedStyle, withTiming } from 'react-native-reanimated';
 
 type Props = {
     label: string;
@@ -39,7 +39,7 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
         <Animated.View style={[styles.container , rnAnimatedContainerStyle]} >
             <Animated.Text style={[styles.label, rnTextStyle]}>{label}</Animated.Text>
               {checked && (
-            <Animated.View style={styles.iconWrpper}>
+            <Animated.View style={styles.iconWrpper} entering={FadeIn.duration(350)}>
                 <AntDesign name='checkcircle' size={14} color={Colors.tint} />
             </Animated.View>
               )}
