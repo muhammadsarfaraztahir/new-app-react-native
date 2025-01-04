@@ -4,7 +4,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 type Props = {
     label: string;
     checked: boolean;
-    onPress: ()
+    onPress: () => void;
 }
 
 const CheckBox = (props: Props) => {
