@@ -19,9 +19,8 @@ export default CheckBox;
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 20,
         flexDirection: 'row',
-        justifyContent: 'space-between',
+        justifyContent: 'center',
         alignItems: 'center',
     },
 })
