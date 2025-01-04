@@ -25,7 +25,8 @@ const CheckBox = ({ label, checked, onPress }: Props) => {
             paddingRight: checked ? 10 : 16,
         };
     });
-    
+
+    const 
     return (
         <Animated.View style={[styles.container , rnAnimatedContainerStyle]} >
             <Text style={styles.label}>{label}</Text>
