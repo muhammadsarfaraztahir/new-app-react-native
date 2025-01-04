@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
     },
     iconWrpper:{
        marginLeft: 8,
-         
+       width: 14,
+       height: 14,  
     },
 })
