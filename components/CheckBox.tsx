@@ -11,12 +11,12 @@ type Props = {
 
 const CheckBox = ({label, checked, onPress}: Props) => {
     return (
-        <View style={styles.container} >
+        <Animated.View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
            <View style={styles.iconWrpper}>
             <AntDesign name='checkcircle' size={14} color={Colors.tint} />
            </View>
-        </View>
+        </Animated.View>
     )
 }
 
