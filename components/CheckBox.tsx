@@ -38,6 +38,7 @@ const styles = StyleSheet.create({
         color: Colors.tint,
     },
     iconWrpper:{
+       marginLeft: 8,
          
     },
 })
