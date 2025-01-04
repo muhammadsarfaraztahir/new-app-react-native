@@ -7,7 +7,7 @@ type Props = {
     onPress: () => void;
 }
 
-const CheckBox = (props: Props) => {
+const CheckBox = (label: Props) => {
     return (
         <View style={styles.container} >
            
