@@ -33,7 +33,7 @@ const newsCategoryList = [
     id: 6,
     title: 'Technology',
     slug: 'technology',
-    selected: false,
+    selected: false ,
   },
   {
     id: 7,
