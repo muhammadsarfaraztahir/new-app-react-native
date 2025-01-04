@@ -25,4 +25,7 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         paddingVertical: 8,
     },
+    label:{
+        
+    },
 })
