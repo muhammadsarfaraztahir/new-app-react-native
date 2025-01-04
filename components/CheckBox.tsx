@@ -13,7 +13,11 @@ type Props = {
 const CheckBox = ({label, checked, onPress}: Props) => {
     const rnAnimatedContainerStyle = useAnimatedStyle(()=>{
         return{
-            backgroundColor: withTiming ( checked ? "rgba(239, 142, 82, 0.1)" : 'transparent', {duration: 150})
+            backgroundColor: withTiming (
+                 checked ? "rgba(239, 142, 82, 0.1)" : 'transparent', 
+                {duration: 150}
+            ),
+            bo
         }
     })
     return (
