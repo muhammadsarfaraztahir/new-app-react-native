@@ -17,7 +17,7 @@ const CheckBox = ({label, checked, onPress}: Props) => {
                  checked ? "rgba(239, 142, 82, 0.1)" : 'transparent', 
                 {duration: 150}
             ),
-            borderColor: withTiming( checked ? Colors.tint : Colors.black)
+            borderColor: withTiming( checked ? Colors.tint : Colors.black, {duration: 150})
         }
     })
     return (
