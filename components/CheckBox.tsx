@@ -11,7 +11,9 @@ type Props = {
 }
 
 const CheckBox = ({label, checked, onPress}: Props) => {
-    const rnAnimatedContainerStyle = useAnimatedStyle
+    const rnAnimatedContainerStyle = useAnimatedStyle(()=>{
+        return
+    })
     return (
         <Animated.View style={styles.container} >
            <Text style={styles.label}>{label}</Text>
