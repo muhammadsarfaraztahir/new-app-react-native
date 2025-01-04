@@ -24,6 +24,7 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center',
         borderWidth: 1,
+        borderColor: Colors.black,
         paddingVertical: 8,
     },
     label:{
