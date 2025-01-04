@@ -10,7 +10,7 @@ type Props = {
 const CheckBox = ({label, checked, onPress}: Props) => {
     return (
         <View style={styles.container} >
-           
+           <Text>{}</Text>
         </View>
     )
 }
