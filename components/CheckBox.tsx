@@ -2,6 +2,7 @@ import { Colors } from '@/constants/Colors';
 import { AntDesign } from '@expo/vector-icons';
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
+import Animated from 'react-native-reanimated';
 
 type Props = {
     label: string;
