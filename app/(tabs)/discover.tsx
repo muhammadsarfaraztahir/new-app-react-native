@@ -72,7 +72,7 @@ const discover = (props: Props) => {
 
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
-           <SearchBar  withHorizontalPadding={false}/>
+           <SearchBar  withHorizontalPadding={false} />
            <Text style={styles.title}>Category</Text>
            <View style={styles.listContainer}>
             {newsCategories.map((item)=>(
