@@ -57,7 +57,7 @@ type Props = {
     setSearchQuery :Function
 };
 
-const SearchBar = ({withHorizontalPadding}: Props) => {
+const SearchBar = ({withHorizontalPadding,setSearchQuery}: Props) => {
     return (
         <View style={[styles.container, withHorizontalPadding && {paddingHorizontal: 20}]} >
             <View style={styles.searchBar}>
