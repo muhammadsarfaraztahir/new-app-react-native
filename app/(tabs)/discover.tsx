@@ -107,7 +107,7 @@ const discover = (props: Props) => {
             </View>
 
             <Link href={{
-                pathname: `/new`
+                pathname: `/news/search`
             }}>
                 <TouchableOpacity style={styles.searchBtn}>
                     <Text style={styles.searchBtnTxt}>Search</Text>
