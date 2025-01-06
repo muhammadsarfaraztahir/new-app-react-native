@@ -83,7 +83,7 @@ const discover = (props: Props) => {
                 </View>
            <Text style={styles.title}>Country</Text>
            <View style={styles.listContainer}>
-            {newsCountries.map((item)=>(
+            {newsCountries.map((item, index)=>(
                 <CheckBox
                  key={item.id}
                   label={item.title}
