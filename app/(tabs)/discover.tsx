@@ -128,7 +128,7 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.tint,
         alignItems: 'center',
         padding: 14,
-        
+        borderRadius: 10,
     },
     searchBtnTxt:{
        
