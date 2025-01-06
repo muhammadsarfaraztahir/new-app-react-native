@@ -45,7 +45,7 @@ const Page = (props: Props) => {
     return (
         <>
         <Stack.Screen options={{
-            
+            headerLeft: 
         }} />
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
