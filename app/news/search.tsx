@@ -11,7 +11,23 @@ const Page = (props: Props) => {
         country: string;
     }>();
 
+    const getNews = async (category: string = '') => {
+        try {
+          let categoryString = '';
+          if( category.length !== 0 ){
+            categoryString = `&category=${category}`
+          }
+          const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10${categoryString}`;
+          const response = await axios.get(URL);
     
+          if (response && response.data) {
+            setNews(response.data.results);
+            setIsLoading(false);
+          }
+        } catch (err: any) {
+          console.log("Error Message: ", err.message);
+        }
+      };
     return (
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
