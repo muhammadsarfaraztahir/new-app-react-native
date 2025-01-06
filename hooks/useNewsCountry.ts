@@ -8,7 +8,7 @@ export const useNewsCountries = ()=>{
     const toggleNewsCountry = useCallback((id: number)=>{
         setNewsCountries((prevNewsCountries) => {
             return prevNewsCountries.map((item, index)=>{
-                if (item.id === id){
+                if (index === id){
                     return {                  
                     ...item,
                     selected: !item.selected
