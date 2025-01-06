@@ -4,6 +4,7 @@ import { Ionicons } from '@expo/vector-icons'
 import { router, Stack, useLocalSearchParams } from 'expo-router'
 import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
+import { FlatList } from 'react-native-gesture-handler'
 
 type Props = {}
 
@@ -58,7 +59,7 @@ const Page = (props: Props) => {
            {isLoading ? (
             <Loading size={'large'}/> 
            ) : (
-            
+            <FlatList /> 
            )}
         </View>
         </>
