@@ -56,7 +56,7 @@ import newsCategoryList from '@/constants/Categories'
 import { Colors } from '@/constants/Colors'
 import { useNewsCategories } from '@/hooks/useNewsCategories'
 import { useNewsCountries } from '@/hooks/useNewsCountry'
-import React from 'react'
+import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
@@ -66,7 +66,7 @@ const discover = (props: Props) => {
     const { top: safeTop } = useSafeAreaInsets();
     const {newsCategories, toggleNewsCategory}= useNewsCategories();
     const {newsCountries, toggleNewsCountry}= useNewsCountries();
-    const [searchQuery, setSearchQuery] = u
+    const [searchQuery, setSearchQuery] = useState("");
 
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
