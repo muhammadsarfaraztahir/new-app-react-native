@@ -64,6 +64,7 @@ type Props = {}
 const discover = (props: Props) => {
     const { top: safeTop } = useSafeAreaInsets();
     const {newsCategories, toggleNewsCategory}= useNewsCategories();
+    const {newsCategories, toggleNewsCategory}= useNewsCategories();
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
            <SearchBar  withHorizontalPadding={false}/>
