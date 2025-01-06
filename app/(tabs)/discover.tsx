@@ -115,8 +115,8 @@ const discover = (props: Props) => {
                 </TouchableOpacity>
             </Link>
         </View>
-    )
-}
+    );
+};
 
 export default discover;
 
