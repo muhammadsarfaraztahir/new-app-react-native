@@ -24,7 +24,7 @@ const Page = (props: Props) => {
             categoryString = `&category=${category}`
           }
           if( country){
-            countryString = `&category=${category}`
+            countryString = `&country=${country}`
           }
           if( category){
             categoryString = `&category=${category}`
