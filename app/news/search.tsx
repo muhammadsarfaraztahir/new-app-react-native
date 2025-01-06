@@ -1,3 +1,4 @@
+import { NewsDataType } from '@/types'
 import { useLocalSearchParams } from 'expo-router'
 import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
