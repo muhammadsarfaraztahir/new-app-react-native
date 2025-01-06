@@ -66,7 +66,7 @@ const discover = (props: Props) => {
     const { top: safeTop } = useSafeAreaInsets();
     const {newsCategories, toggleNewsCategory}= useNewsCategories();
     const {newsCountries, toggleNewsCountry}= useNewsCountries();
-    const [search]
+    const [searchQu]
 
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
