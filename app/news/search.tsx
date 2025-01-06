@@ -56,7 +56,7 @@ const Page = (props: Props) => {
         }} />
         <View style={styles.container} >
            {isLoading ? (
-            <Loading
+            <Loading s/> 
            )}
         </View>
         </>
