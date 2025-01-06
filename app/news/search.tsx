@@ -14,7 +14,7 @@ const Page = (props: Props) => {
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
             <Text>category: {category}</Text>
-            <Text>Search query: {query}</Text>
+            <Text>Country: {country}</Text>
         </View>
     )
 }
