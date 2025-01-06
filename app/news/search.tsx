@@ -48,7 +48,7 @@ const Page = (props: Props) => {
         <Stack.Screen options={{
             headerLeft: ()=> (
                <TouchableOpacity>
-                <Ionicons name=''/>
+                <Ionicons name='arrow-back' />
                </TouchableOpacity> 
             )
         }} />
