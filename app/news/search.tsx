@@ -1,19 +1,18 @@
 import { useLocalSearchParams } from 'expo-router'
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 
 type Props = {}
 
 const Page = (props: Props) => {
-    const { query } = useLocalSearchParams<{
+    const { query, category, country } = useLocalSearchParams<{
         query: string;
-         category: string;
-          country: string;
-
-     }>();
+        category: string;
+        country: string;
+    }>();
     return (
         <View style={styles.container} >
-          <Text>Page</Text>
+            <Text></Text>
         </View>
     )
 }
