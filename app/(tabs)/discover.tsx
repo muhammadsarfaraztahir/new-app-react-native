@@ -99,7 +99,7 @@ const discover = (props: Props) => {
                    checked={item.selected}
                    onPress={() => {
                     toggleNewsCountry(index);
-                    setCountry();
+                    setCountry(item.code);
                    }}
                    />
             ))}
