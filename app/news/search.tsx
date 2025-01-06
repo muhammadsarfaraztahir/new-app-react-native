@@ -10,6 +10,8 @@ const Page = (props: Props) => {
         category: string;
         country: string;
     }>();
+
+    
     return (
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
