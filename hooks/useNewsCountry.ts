@@ -21,6 +21,6 @@ export const useNewsCountries = ()=>{
 
     return{
         newsCountries,
-        toggleNewsCategory
+        toggleNewsCountry
     }
 }
