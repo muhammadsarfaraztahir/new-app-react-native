@@ -68,7 +68,7 @@ const discover = (props: Props) => {
     const {newsCountries, toggleNewsCountry}= useNewsCountries();
     const [searchQuery, setSearchQuery] = useState("");
     const [category, setCategory] = useState("");
-    const [Country, setCountry] = useState("");
+    const [country, setCountry] = useState("");
 
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
