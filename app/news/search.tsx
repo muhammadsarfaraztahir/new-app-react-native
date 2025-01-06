@@ -54,7 +54,7 @@ const Page = (props: Props) => {
             title: 'Search'
         }} />
         <View style={styles.container} >
-           {}
+           {isLoading }
         </View>
         </>
     )
