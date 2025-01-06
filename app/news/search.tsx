@@ -12,7 +12,7 @@ const Page = (props: Props) => {
     }>();
     return (
         <View style={styles.container} >
-            <Text></Text>
+            <Text>Search query</Text>
         </View>
     )
 }
