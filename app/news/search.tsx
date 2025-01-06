@@ -7,7 +7,8 @@ type Props = {}
 const Page = (props: Props) => {
     const {} = useLocalSearchParams<{
         query: string,
-         category: string, country: string
+         category: string,
+          country: string
 
      }>();
     return (
