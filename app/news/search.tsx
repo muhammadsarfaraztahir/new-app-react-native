@@ -23,6 +23,12 @@ const Page = (props: Props) => {
           if( category){
             categoryString = `&category=${category}`
           }
+          if( country){
+            countryString = `&category=${category}`
+          }
+          if( category){
+            categoryString = `&category=${category}`
+          }
           const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10${categoryString}`;
           const response = await axios.get(URL);
     
