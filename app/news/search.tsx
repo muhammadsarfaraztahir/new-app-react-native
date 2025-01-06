@@ -30,7 +30,7 @@ const Page = (props: Props) => {
             queryString = `&q=${query}`
           }
 
-          const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10${categoryString}${}`;
+          const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&language=en&image=1&removeduplicate=1&size=10${categoryString}${countryString}`;
           const response = await axios.get(URL);
     
           if (response && response.data) {
