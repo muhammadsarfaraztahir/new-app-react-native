@@ -85,7 +85,7 @@ const discover = (props: Props) => {
            <View style={styles.listContainer}>
             {newsCountries.map((item, index)=>(
                 <CheckBox
-                 key={item.id}
+                 key={index}
                   label={item.title}
                    checked={item.selected}
                    onPress={() => {
