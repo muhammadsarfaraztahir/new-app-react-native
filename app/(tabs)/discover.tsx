@@ -134,6 +134,6 @@ const styles = StyleSheet.create({
     searchBtnTxt:{
        color: Colors.white,
        fontSize: 16,
-       
+       fontWeight: '600',
     },
 })
