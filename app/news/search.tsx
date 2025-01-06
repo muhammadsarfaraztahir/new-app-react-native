@@ -1,5 +1,5 @@
 import { NewsDataType } from '@/types'
-import { useLocalSearchParams } from 'expo-router'
+import { Stack, useLocalSearchParams } from 'expo-router'
 import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 
@@ -44,7 +44,7 @@ const Page = (props: Props) => {
 
     return (
         <>
-        <S
+        <Stack
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
             <Text>category: {category}</Text>
