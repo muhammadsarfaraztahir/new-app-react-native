@@ -10,7 +10,9 @@ const Page = (props: Props) => {
         category: string;
         country: string;
     }>();
-    
+
+    const [news, setNews] = useState<NewsDataType[]>([]);
+      const [isLoading, setIsLoading] = useState(true);
 
     const getNews = async (category: string = '') => {
         try {
