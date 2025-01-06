@@ -127,4 +127,7 @@ const styles = StyleSheet.create({
     searchBtn:{
         
     },
+    searchBtnTxt:{
+       
+    },
 })
