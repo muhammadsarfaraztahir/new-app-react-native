@@ -54,9 +54,7 @@ const Page = (props: Props) => {
             title: 'Search'
         }} />
         <View style={styles.container} >
-            <Text>Search query: {query}</Text>
-            <Text>category: {category}</Text>
-            <Text>Country: {country}</Text>
+           {}
         </View>
         </>
     )
