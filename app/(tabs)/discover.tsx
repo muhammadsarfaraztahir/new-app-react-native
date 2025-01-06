@@ -55,6 +55,7 @@ import SearchBar from '@/components/SearchBar'
 import newsCategoryList from '@/constants/Categories'
 import { Colors } from '@/constants/Colors'
 import { useNewsCategories } from '@/hooks/useNewsCategories'
+import { useNewsCountries } from '@/hooks/useNewsCountry'
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
@@ -65,6 +66,7 @@ const discover = (props: Props) => {
     const { top: safeTop } = useSafeAreaInsets();
     const {newsCategories, toggleNewsCategory}= useNewsCategories();
     const {newsCountries, toggleNewsCountry}= useNewsCountries();
+
     return (
         <View style={[styles.container, {paddingTop: safeTop + 20}]} >
            <SearchBar  withHorizontalPadding={false}/>
@@ -83,13 +85,13 @@ const discover = (props: Props) => {
                 </View>
            <Text style={styles.title}>Country</Text>
            <View style={styles.listContainer}>
-            {newsCountries.map((item, index)=>(
+            {newsCountries.map((item, index) => (
                 <CheckBox
                  key={index}
-                  label={item.title}
+                  label={item.name}
                    checked={item.selected}
                    onPress={() => {
-                    toggleNewsCategory(item.id)
+                    toggleNewsCoury(index)
                    }}
                    />
             ))}
