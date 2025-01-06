@@ -59,7 +59,7 @@ const Page = (props: Props) => {
            {isLoading ? (
             <Loading size={'large'}/> 
            ) : (
-            <FlatList data={news} /> 
+            <FlatList data={news} keyExtractor={} /> 
            )}
         </View>
         </>
