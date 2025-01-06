@@ -51,7 +51,7 @@ const Page = (props: Props) => {
                 <Ionicons name='arrow-back' size={22}/>
                </TouchableOpacity> 
             ),
-            title: 'S'
+            title: 'Search'
         }} />
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
