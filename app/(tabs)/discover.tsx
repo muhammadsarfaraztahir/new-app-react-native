@@ -84,7 +84,8 @@ const discover = (props: Props) => {
                   label={item.title}
                    checked={item.selected}
                    onPress={() => {
-                    toggleNewsCategory(item.id)
+                    toggleNewsCategory(item.id);
+                    
                    }}
                    />
                 ))}
