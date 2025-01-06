@@ -67,7 +67,7 @@ const SearchBar = ({withHorizontalPadding,setSearchQuery}: Props) => {
                  placeholderTextColor={Colors.lightGrey} 
                  style={styles.searchText}
                  autoCapitalize='none'
-                 onChangeText={query => setSearchQuery(q)}
+                 onChangeText={query => setSearchQuery(query)}
                  />
             </View>
         </View>
