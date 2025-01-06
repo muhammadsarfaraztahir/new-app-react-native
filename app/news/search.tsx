@@ -18,7 +18,7 @@ const Page = (props: Props) => {
     const getNews = async () => {
         try {
           let categoryString = '';
-          let categoryString = '';
+          let countryString = '';
           if( category){
             categoryString = `&category=${category}`
           }
