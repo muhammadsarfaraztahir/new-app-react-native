@@ -129,6 +129,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 14,
         borderRadius: 10,
+        marginVertical: 10,
     },
     searchBtnTxt:{
        
