@@ -8,7 +8,7 @@ type Props = {}
 const Page = (props: Props) => {
     return (
         <View style={styles.container} >
-          <Text></Text>
+          <Text>Page</Text>
         </View>
     )
 }
