@@ -22,25 +22,5 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
     },
-    userImg: {
-        width: 50,
-        height: 50,
-        borderRadius: 30,
-    },
-    userInfo:{
-        flexDirection: 'row',
-        alignContent: 'center',
-        gap: 10,
-    },
-    welcomeText:{
-       fontSize: 12,
-       fontWeight: '700',
-       color:Colors.darkGrey,
-    },
-    userName:{
-        fontWeight: '700',
-        fontSize: 14,
-        color: Colors.black
-    },
 
 })
