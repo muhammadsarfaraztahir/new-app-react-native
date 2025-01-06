@@ -132,6 +132,7 @@ const styles = StyleSheet.create({
         marginVertical: 10,
     },
     searchBtnTxt:{
-       color: Colors.
+       color: Colors.white,
+       
     },
 })
