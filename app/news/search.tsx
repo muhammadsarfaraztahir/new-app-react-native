@@ -43,11 +43,13 @@ const Page = (props: Props) => {
       };
 
     return (
+        <>
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
             <Text>category: {category}</Text>
             <Text>Country: {country}</Text>
         </View>
+        </>
     )
 }
 
