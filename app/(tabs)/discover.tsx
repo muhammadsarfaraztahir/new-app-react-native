@@ -126,7 +126,9 @@ const styles = StyleSheet.create({
     },
     searchBtn:{
         backgroundColor: Colors.tint,
-        alignItems: 
+        alignItems: 'center',
+        padding: 14,
+        
     },
     searchBtnTxt:{
        
