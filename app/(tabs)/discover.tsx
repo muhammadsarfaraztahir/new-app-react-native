@@ -97,7 +97,7 @@ const discover = (props: Props) => {
             ))}
            </View>
 
-           <TouchableOpacity style={styles.}>
+           <TouchableOpacity style={styles.searchBtn}>
             <Text>Search</Text>
            </TouchableOpacity>
         </View>
