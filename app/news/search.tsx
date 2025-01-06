@@ -50,7 +50,8 @@ const Page = (props: Props) => {
                <TouchableOpacity onPress={() => router.back()}>
                 <Ionicons name='arrow-back' size={22}/>
                </TouchableOpacity> 
-            )
+            ),
+            title: 'S'
         }} />
         <View style={styles.container} >
             <Text>Search query: {query}</Text>
