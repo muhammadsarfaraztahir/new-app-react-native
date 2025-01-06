@@ -125,6 +125,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
     },
     searchBtn:{
+        backgroundColor: Colors.tint,
         
     },
     searchBtnTxt:{
