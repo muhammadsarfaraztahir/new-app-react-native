@@ -8,19 +8,7 @@ type Props = {}
 const Page = (props: Props) => {
     return (
         <View style={styles.container} >
-            <View style={styles.userInfo}>
-                <Image
-                    source={{ uri: 'https://xsgames.co/randomusers/avatar.php?g=male' }}
-                    style={styles.userImg}
-                />
-                <View style={{gap: 3 }}>
-                    <Text style={styles.welcomeText}>Welcome</Text>
-                    <Text style={styles.userName}>Muhammad Sarfaraz Tahir</Text>
-                </View>
-            </View>
-            <TouchableOpacity onPress={() => { }}>
-                <Ionicons name='notifications-outline' size={24} color={Colors.black} />
-            </TouchableOpacity>
+          
         </View>
     )
 }
