@@ -54,7 +54,7 @@ import { TextInput } from 'react-native-gesture-handler'
 
 type Props = {
     withHorizontalPadding: boolean
-    set
+    setSearch
 };
 
 const SearchBar = ({withHorizontalPadding}: Props) => {
