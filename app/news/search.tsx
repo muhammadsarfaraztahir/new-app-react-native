@@ -1,4 +1,5 @@
 import { NewsDataType } from '@/types'
+import { Ionicons } from '@expo/vector-icons'
 import { Stack, useLocalSearchParams } from 'expo-router'
 import React, { useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
@@ -47,7 +48,7 @@ const Page = (props: Props) => {
         <Stack.Screen options={{
             headerLeft: ()=> (
                <TouchableOpacity>
-                
+                <Ionicons name=''/>
                </TouchableOpacity> 
             )
         }} />
