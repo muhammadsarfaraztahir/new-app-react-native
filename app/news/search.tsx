@@ -19,6 +19,7 @@ const Page = (props: Props) => {
         try {
           let categoryString = '';
           let countryString = '';
+          let countryString = '';
           if( category){
             categoryString = `&category=${category}`
           }
