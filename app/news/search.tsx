@@ -1,3 +1,4 @@
+import Loading from '@/components/Loading'
 import { NewsDataType } from '@/types'
 import { Ionicons } from '@expo/vector-icons'
 import { router, Stack, useLocalSearchParams } from 'expo-router'
@@ -54,7 +55,9 @@ const Page = (props: Props) => {
             title: 'Search'
         }} />
         <View style={styles.container} >
-           {isLoading }
+           {isLoading ? (
+            <Loading
+           )}
         </View>
         </>
     )
