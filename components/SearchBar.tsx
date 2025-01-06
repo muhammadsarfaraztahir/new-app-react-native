@@ -67,6 +67,7 @@ const SearchBar = ({withHorizontalPadding}: Props) => {
                  placeholderTextColor={Colors.lightGrey} 
                  style={styles.searchText}
                  autoCapitalize='none'
+                 
                  />
             </View>
         </View>
