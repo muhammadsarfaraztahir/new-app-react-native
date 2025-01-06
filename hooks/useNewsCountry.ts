@@ -1,12 +1,13 @@
 import newsCategoryList from "@/constants/Categories"
+import CountryList from "@/constants/CountryList";
 import { useCallback, useState } from "react"
 
-export const useNewsCategories = ()=>{
-    const [newsCategories, setNewsCategories] = useState(newsCategoryList);
+export const useNewsCountries = ()=>{
+    const [newsCountries, setNewsCountries] = useState(CountryList);
 
-    const toggleNewsCategory = useCallback((id: number)=>{
-        setNewsCategories((prevNewsCategories) => {
-            return prevNewsCategories.map((item)=>{
+    const toggleNewsCountry = useCallback((id: number)=>{
+        setNewsCountries((prevNewsCountries) => {
+            return prevNewsCountries.map((item)=>{
                 if (item.id === id){
                     return {                  
                     ...item,
@@ -19,7 +20,7 @@ export const useNewsCategories = ()=>{
     },[]);
 
     return{
-        newsCategories,
+        newsCountries,
         toggleNewsCategory
     }
 }
