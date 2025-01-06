@@ -46,7 +46,9 @@ const Page = (props: Props) => {
         <>
         <Stack.Screen options={{
             headerLeft: ()=> (
+               <TouchableOpacity>
                 
+               </TouchableOpacity> 
             )
         }} />
         <View style={styles.container} >
