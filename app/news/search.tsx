@@ -14,7 +14,7 @@ const Page = (props: Props) => {
     const [news, setNews] = useState<NewsDataType[]>([]);
       const [isLoading, setIsLoading] = useState(true);
 
-    const getNews = async (category: string = '') => {
+    const getNews = async () => {
         try {
           let categoryString = '';
           if( category.length !== 0 ){
