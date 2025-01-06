@@ -5,7 +5,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 type Props = {}
 
 const Page = (props: Props) => {
-    const {} = useLocalSearchParams({});
+    const {} = useLocalSearchParams<{query: }>();
     return (
         <View style={styles.container} >
           <Text>Page</Text>
