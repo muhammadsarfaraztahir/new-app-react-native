@@ -96,6 +96,8 @@ const discover = (props: Props) => {
                    />
             ))}
            </View>
+
+           <
         </View>
     )
 }
