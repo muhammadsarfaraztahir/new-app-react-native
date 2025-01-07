@@ -34,7 +34,7 @@ const Page = (props: Props) => {
   return (
     <>
     <Stack.Screen options={{
-      
+      headerShown: 
     }}/> 
     <View style={styles.container}>
       <Text>Saved Screen</Text>
