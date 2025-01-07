@@ -26,7 +26,7 @@ const Page = (props: Props) => {
         setIsLoading(false);
       } else {
         setBookmarkNews([]);
-        setIsLoading
+        setIsLoading()
       }
     })
   }
