@@ -34,7 +34,7 @@ const getNews = async () => {
     }
 };
 
-const saveBookmark = async (newsId: string) => {
+const saveBookmark = async(newsId: string) => {
     setBookmark(true);
     await AsyncStorage.getItem("bookmark").then((token) => {
         const res = JSON.parse(token);
