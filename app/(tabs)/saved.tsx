@@ -2,6 +2,7 @@ import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
+import { Stack } from 'expo-router';
 
 type Props = {}
 
@@ -32,6 +33,7 @@ const Page = (props: Props) => {
   }
   return (
     <>
+    <Stack
     <View style={styles.container}>
       <Text>Saved Screen</Text>
     </View>
