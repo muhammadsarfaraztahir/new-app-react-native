@@ -61,7 +61,7 @@ const removeBookmark = async(newsId: string) => {
       return res.filter((id: string) => id !== newsId); 
     })
     await AsyncStorage.setItem('bookmark', JSON.stringify(bookmark));
-    alert("News unSaved!")
+    alert("News unSaved!");
 }
 
 return (
