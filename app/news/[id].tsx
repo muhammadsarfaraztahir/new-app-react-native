@@ -36,9 +36,10 @@ const NewsDetails = (props: Props) => {
 
       const saveBookmark = async(newsId: string) =>{
         setBookmark(true);
-        await AsyncStorage.getItem("bookmark").then((token)) => {
-           const res =  
+        await AsyncStorage.getItem("bookmark").then((token) => {
+           const res =  JSON.parse(token);
         }
+    )
       }
     
     return (
