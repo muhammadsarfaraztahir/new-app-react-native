@@ -17,7 +17,7 @@ const Page = (props: Props) => {
       const res =JSON.parse(token);
       if ( res ) {
         console.log('Bookmark res: ', res);
-        let uery_tring = res.join(',');
+        let uery_string = res.join(',');
       }
     })
   }
