@@ -31,9 +31,11 @@ const Page = (props: Props) => {
     })
   }
   return (
+    <>
     <View style={styles.container}>
       <Text>Saved Screen</Text>
     </View>
+    </>
   )
 }
 
