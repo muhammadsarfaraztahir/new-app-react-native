@@ -33,7 +33,7 @@ const NewsDetails = (props: Props) => {
         }
       }; 
 
-      
+      const 
     
     return (
         <>
