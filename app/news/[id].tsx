@@ -63,12 +63,13 @@ const NewsDetails = (props: Props) => {
                 </TouchableOpacity>
             ),
             headerRight: ()=> (
-                <TouchableOpacity onPress={()=> {}}>
+                <TouchableOpacity onPress={()=> saveBookmark}>
                     <Ionicons name='heart-outline' size={22} />
                 </TouchableOpacity>
             ),
-            title:
-        }} />
+            title: "",
+        }} 
+        />
         {isLoading ? (
             <Loading size={'large'}/>
         ):(
