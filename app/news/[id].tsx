@@ -8,6 +8,7 @@ import { StyleSheet, Text, TouchableOpacity, View, Image } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import Moment from 'moment'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import axios from 'axios'
 
 type Props = {}
 
