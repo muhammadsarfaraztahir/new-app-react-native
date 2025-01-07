@@ -119,7 +119,7 @@ const NewsList = ({ newsList }: Props) => {
 
 export default NewsList;
 
-const NewsItem = () => {
+const NewsItem = (() : ) => {
   return(
     <View style={styles.itemContainer}>
                 <Image
