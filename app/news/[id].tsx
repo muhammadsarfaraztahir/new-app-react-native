@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react'
 import { StyleSheet, Text, TouchableOpacity, View, Image  } from 'react-native'
 import { ScrollView } from 'react-native-gesture-handler'
 import Moment  from 'moment'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 type Props = {}
 
@@ -35,6 +36,7 @@ const NewsDetails = (props: Props) => {
 
       const saveBookmark = async(newsId: string) =>{
         setBookmark(true);
+        AsyncStorage
       }
     
     return (
