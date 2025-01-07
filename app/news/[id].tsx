@@ -32,6 +32,8 @@ const NewsDetails = (props: Props) => {
           console.log("Error Message: ", err.message);
         }
       }; 
+
+      
     
     return (
         <>
