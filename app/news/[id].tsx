@@ -68,7 +68,9 @@ const NewsDetails = (props: Props) => {
     const renderBookmark = async(newsId : string) => {
         await AsyncStorage.getItem("bookmark").then((token) => {
             const res = JSON.parse(token);
-            if res != null 
+            if( res != null){
+                
+            } 
         }
     }
 
