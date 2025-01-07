@@ -12,7 +12,7 @@ const Page = (props: Props) => {
     await AsyncStorage.getItem('bookmark').then((token) => {
       const res =JSON.parse(token);
       if ( res ) {
-        
+        const 
       }
     })
   }
