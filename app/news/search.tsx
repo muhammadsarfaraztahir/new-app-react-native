@@ -18,7 +18,7 @@ const Page = (props: Props) => {
   const [news, setNews] = useState<NewsDataType[]>([]);
   const [isLoading, setIsLoading] = useState(true);
    useEffect(()=>{
-    get
+    getNews();
    },[])
 
   const getNews = async () => {
