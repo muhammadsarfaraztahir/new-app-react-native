@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 type Props = {}
@@ -7,6 +7,8 @@ type Props = {}
 const Page = (props: Props) => {
   const [bookmarkNews, setBookmarkNews ] =useState([]);
   const [isLoading, setIsLoading ] =useState(true);
+
+  useEffect();
 
   const fetchBookmark = async() => {
     await AsyncStorage.getItem('bookmark').then((token) => {
