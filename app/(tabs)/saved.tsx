@@ -14,14 +14,14 @@ const Page = (props: Props) => {
   }, []);
 
   const fetchBookmark = async() => {
-    await AsyncStorage.getItem('bookmark').then((token) => {
+    await AsyncStorage.getItem('bookmark').then(async(token) => {
       const res =JSON.parse(token);
       if ( res ) {
         console.log('Bookmark res: ', res);
         let query_string = res.join(',');
         console.log("query_string: ", query_string);
         
-        const response = await axios.get
+        const response = await axios.get();
       }
     })
   }
