@@ -22,7 +22,9 @@ const NewsDetails = (props: Props) => {
         getNews();
     }, []);
 
-    
+    useEffect(() => {
+        renderBookmark();
+    }, [isLoading]);
 
     const getNews = async () => {
         try {
