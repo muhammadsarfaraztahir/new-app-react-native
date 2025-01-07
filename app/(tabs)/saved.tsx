@@ -6,6 +6,8 @@ type Props = {}
 const Page = (props: Props) => {
   const [bookmarkNews, setBookmarkNews ] =useState([]);
   const [isLoading, setIsLoading ] =useState(true);
+
+  const 
   return (
     <View style={styles.container}>
       <Text>Saved Screen</Text>
