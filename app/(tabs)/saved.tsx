@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 
 type Props = {}
 
 const Page = (props: Props) => {
-  const [bookmarkNews, bookmarkNews ]
+  const [bookmarkNews, setBookmarkNews ] =useState();
   return (
     <View style={styles.container}>
       <Text>Saved Screen</Text>
