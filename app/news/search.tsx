@@ -69,7 +69,7 @@ const Page = (props: Props) => {
              showsVerticalScrollIndicator={false}
               renderItem={({ index, item }) => {
             return (
-              <NewsItem item={item}/>
+              <NewsItem item={item}/>;
             )
           }} />
         )}
