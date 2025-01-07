@@ -55,7 +55,8 @@ const saveBookmark = async(newsId: string) => {
 };
 
 const removeBookmark = async(newsId: string) => {
-    
+    setBookmark(false);
+    await AsyncStorage.getItem
 }
 
 return (
