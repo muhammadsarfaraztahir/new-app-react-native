@@ -4,7 +4,7 @@ import React from 'react'
 type Props = {}
 
 const Page = (props: Props) => {
-  const 
+  const [bookmarkNew]
   return (
     <View style={styles.container}>
       <Text>Saved Screen</Text>
