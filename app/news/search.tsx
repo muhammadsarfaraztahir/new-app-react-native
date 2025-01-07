@@ -61,7 +61,7 @@ const Page = (props: Props) => {
            ) : (
             <FlatList data={news} keyExtractor={(_, index) => `list_item${index}`} showsVerticalScrollIndicator={false} renderItem={({index, item})=> {
               return(
-                <Text> </Text>
+                <Text>{item.title}</Text>
               )
             }} /> 
            )}
