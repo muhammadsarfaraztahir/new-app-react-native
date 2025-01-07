@@ -46,7 +46,7 @@ const NewsDetails = (props: Props) => {
                 alert("News Saved");
             }
            } else {
-            
+            let bookmark = [];
            }
         })
       }
