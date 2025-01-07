@@ -8,7 +8,9 @@ const Page = (props: Props) => {
   const [bookmarkNews, setBookmarkNews ] =useState([]);
   const [isLoading, setIsLoading ] =useState(true);
 
-  useEffect();
+  useEffect(() => {
+    
+  }, []);
 
   const fetchBookmark = async() => {
     await AsyncStorage.getItem('bookmark').then((token) => {
