@@ -42,6 +42,7 @@ const NewsDetails = (props: Props) => {
             let data = res.find((value: string) => value === newsId);
             if( data == null ) {
                 res.push(newsId);
+                AsyncStorage.setItem("")
             }
            }
         })
