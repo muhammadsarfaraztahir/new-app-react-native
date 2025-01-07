@@ -70,7 +70,7 @@ const NewsDetails = (props: Props) => {
             const res = JSON.parse(token);
             if( res != null){
                 let data = res.find((value: string) => value === newsId);
-                return data == null ? setBookmark(false)
+                return data == null ? setBookmark(false) : setBookmark
             } 
         }
     }
