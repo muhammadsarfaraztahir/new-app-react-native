@@ -108,7 +108,20 @@ const NewsList = ({ newsList }: Props) => {
         newsList.map((item, index) => (
           <Link href={`/new/${item.article_id}`} asChild key={index}>
             <TouchableOpacity>
-              <View style={styles.itemContainer}>
+              
+            </TouchableOpacity>
+          </Link>
+        ))
+      )}
+    </View>
+  );
+};
+
+export default NewsList;
+
+const NewsItem = () => {
+  return(
+    <View style={styles.itemContainer}>
                 <Image
                   source={{ uri: item.image_url }}
                   style={styles.itemImage}
@@ -127,19 +140,6 @@ const NewsList = ({ newsList }: Props) => {
                   </View>
                 </View>
               </View>
-            </TouchableOpacity>
-          </Link>
-        ))
-      )}
-    </View>
-  );
-};
-
-export default NewsList;
-
-const NewsItem = () => {
-  return(
-    
   )
 }
 
