@@ -63,9 +63,9 @@ const Page = (props: Props) => {
            )}
         </View>
         </>
-        
-    )
-}
+
+    );
+};
 
 export default Page;
 
