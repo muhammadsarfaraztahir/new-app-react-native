@@ -59,7 +59,6 @@ const removeBookmark = async(newsId: string) => {
     await AsyncStorage.getItem("bookmark").then((token) => {
       const res =JSON.parse(token);  
       return res.filter((id: string) => id !== newsId); 
-
     })
 }
 
