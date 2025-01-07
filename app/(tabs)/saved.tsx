@@ -20,6 +20,7 @@ const Page = (props: Props) => {
         let query_string = res.join(',');
         console.log("query_string: ", query_string);
         
+        const response =
       }
     })
   }
