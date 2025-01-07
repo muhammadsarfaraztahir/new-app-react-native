@@ -75,10 +75,7 @@ export default Page;
 
 const styles = StyleSheet.create({
     container: {
-        paddingHorizontal: 20,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        alignItems: 'center',
+        
     },
 
 })
