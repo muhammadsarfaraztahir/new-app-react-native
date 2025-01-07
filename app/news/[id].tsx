@@ -41,8 +41,7 @@ const NewsDetails = (props: Props) => {
            if ( res !== null){
             let data = res.find((value: string) => value === newsId);
            }
-        }
-    )
+        })
       }
     
     return (
