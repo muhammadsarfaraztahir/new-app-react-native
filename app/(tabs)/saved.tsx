@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 type Props = {}
 
 const Page = (props: Props) => {
-  const [bookmarkNews, setBookmarkNews ] =useState();
+  const [bookmarkNews, setBookmarkNews ] =useState([]);
   return (
     <View style={styles.container}>
       <Text>Saved Screen</Text>
