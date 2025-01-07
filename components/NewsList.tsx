@@ -137,6 +137,8 @@ const NewsList = ({ newsList }: Props) => {
 
 export default NewsList;
 
+const 
+
 const styles = StyleSheet.create({
   container: {
     marginHorizontal: 20,
