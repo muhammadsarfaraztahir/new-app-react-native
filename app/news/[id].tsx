@@ -54,7 +54,7 @@ const saveBookmark = async(newsId: string) => {
     });
 };
 
-const removeBookmark =
+const removeBookmark = async(newsId)
 
 return (
     <>
