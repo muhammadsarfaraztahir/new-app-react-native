@@ -1,4 +1,5 @@
 import Loading from '@/components/Loading'
+import { NewsItem } from '@/components/NewsList'
 import { NewsDataType } from '@/types'
 import { Ionicons } from '@expo/vector-icons'
 import { router, Stack, useLocalSearchParams } from 'expo-router'
@@ -64,7 +65,7 @@ const Page = (props: Props) => {
         ) : (
           <FlatList data={news} keyExtractor={(_, index) => `list_item${index}`} showsVerticalScrollIndicator={false} renderItem={({ index, item }) => {
             return (
-              <Text>{item.title}</Text>
+              <NewsItem />
             )
           }} />
         )}
