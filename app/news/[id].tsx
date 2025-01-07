@@ -73,7 +73,7 @@ return (
                 </TouchableOpacity>
             ),
             headerRight: () => (
-                <TouchableOpacity onPress={() => bookmark ? removeBookmark() : saveBookmark(news[0].article_id)}>
+                <TouchableOpacity onPress={() => bookmark ? removeBookmark(news[0].article_id) : saveBookmark(news[0].article_id)}>
                     <Ionicons name={bookmark ? "heart" :'heart-outline'} size={22}  color={bookmark ? 'red' : Colors.black}/>
                 </TouchableOpacity>
             ),
