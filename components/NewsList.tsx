@@ -137,7 +137,11 @@ const NewsList = ({ newsList }: Props) => {
 
 export default NewsList;
 
-const 
+const NewsItem = () => {
+  return(
+    
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
