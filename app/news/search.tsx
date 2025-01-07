@@ -68,9 +68,7 @@ const Page = (props: Props) => {
             keyExtractor={(_, index) => `list_item${index}`}
              showsVerticalScrollIndicator={false}
               renderItem={({ index, item }) => {
-            return (
-              <NewsItem item={item}/>;
-            )
+            return <NewsItem item={item}/>;
           }} />
         )}
       </View>
