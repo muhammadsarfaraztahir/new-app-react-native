@@ -18,7 +18,7 @@ const Page = (props: Props) => {
       if ( res ) {
         console.log('Bookmark res: ', res);
         let query_string = res.join(',');
-        console.log();
+        console.log("query_string: ", query_string);
         
       }
     })
