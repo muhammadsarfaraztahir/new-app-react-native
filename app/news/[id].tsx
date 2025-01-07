@@ -38,6 +38,9 @@ const NewsDetails = (props: Props) => {
         setBookmark(true);
         await AsyncStorage.getItem("bookmark").then((token) => {
            const res =  JSON.parse(token);
+           if ( res !== null){
+            let data = res.find((value: ))
+           }
         }
     )
       }
