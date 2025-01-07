@@ -7,7 +7,7 @@ const Page = (props: Props) => {
   const [bookmarkNews, setBookmarkNews ] =useState([]);
   const [isLoading, setIsLoading ] =useState(true);
 
-  const fetchBookmark = 
+  const fetchBookmark = async() => {}
   return (
     <View style={styles.container}>
       <Text>Saved Screen</Text>
