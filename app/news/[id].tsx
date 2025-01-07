@@ -64,7 +64,8 @@ const NewsDetails = (props: Props) => {
         });
         await AsyncStorage.setItem('bookmark', JSON.stringify(bookmark));
         alert("News unSaved!");
-    }
+    };
+    
 
     return (
         <>
