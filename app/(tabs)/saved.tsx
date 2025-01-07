@@ -33,7 +33,7 @@ const Page = (props: Props) => {
   }
   return (
     <>
-    <Stack
+    <Stack.Screen /> 
     <View style={styles.container}>
       <Text>Saved Screen</Text>
     </View>
