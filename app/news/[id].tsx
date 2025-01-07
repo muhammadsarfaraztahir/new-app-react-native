@@ -14,7 +14,7 @@ const NewsDetails = (props: Props) => {
     const {id} = useLocalSearchParams<{id: string}>();
       const [news, setNews] = useState<NewsDataType[]>([]);
       const [isLoading, setIsLoading] = useState(true);
-      const [bookmark, setBookmark] = useState();
+      const [bookmark, setBookmark] = useState(false);
 
       useEffect(()=>(
         getNews();
