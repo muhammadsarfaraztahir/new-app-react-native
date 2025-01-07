@@ -9,7 +9,7 @@ const Page = (props: Props) => {
   const [isLoading, setIsLoading ] =useState(true);
 
   const fetchBookmark = async() => {
-    await AsyncStorage.getItem('bookmark').then
+    await AsyncStorage.getItem('bookmark').then((token) => {})
   }
   return (
     <View style={styles.container}>
