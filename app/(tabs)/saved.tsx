@@ -22,7 +22,6 @@ const Page = (props: Props) => {
         console.log("query_string: ", query_string);
         
         const response = await axios.get(`https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&id=${query_string}`);
-
         setBookmarkNews(response.data.results);
       }
     })
