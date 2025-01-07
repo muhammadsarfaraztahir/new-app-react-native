@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import axios from 'axios';
 
 type Props = {}
 
@@ -20,7 +21,7 @@ const Page = (props: Props) => {
         let query_string = res.join(',');
         console.log("query_string: ", query_string);
         
-        const response =
+        const response = await axios.get
       }
     })
   }
