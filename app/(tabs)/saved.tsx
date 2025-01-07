@@ -37,7 +37,7 @@ const Page = (props: Props) => {
       headerShown: true,
     }} /> 
     <View style={styles.container}>
-      <Text>Saved Screen</Text>
+      {isLoading ? }
     </View>
     </>
   )
