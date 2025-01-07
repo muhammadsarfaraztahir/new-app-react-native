@@ -9,7 +9,7 @@ const Page = (props: Props) => {
   const [isLoading, setIsLoading ] =useState(true);
 
   useEffect(() => {
-    
+    fetchBookmark();
   }, []);
 
   const fetchBookmark = async() => {
