@@ -51,8 +51,10 @@ const saveBookmark = async(newsId: string) => {
             AsyncStorage.setItem("bookmark", JSON.stringify(bookmark))
             alert("News Saved");
         }
-    })
-}
+    });
+};
+
+
 
 return (
     <>
