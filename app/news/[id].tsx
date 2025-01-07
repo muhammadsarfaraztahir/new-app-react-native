@@ -23,6 +23,7 @@ const NewsDetails = (props: Props) => {
     }, []);
 
     useEffect(() => {
+        if( ! )
         renderBookmark(news[0].article_id);
     }, [isLoading]);
 
