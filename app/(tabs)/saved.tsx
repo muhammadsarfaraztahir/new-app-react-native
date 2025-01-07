@@ -10,7 +10,7 @@ const Page = (props: Props) => {
 
   const fetchBookmark = async() => {
     await AsyncStorage.getItem('bookmark').then((token) => {
-      const res
+      const res =JSON.parse()
     })
   }
   return (
