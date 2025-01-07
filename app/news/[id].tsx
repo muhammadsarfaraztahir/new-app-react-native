@@ -33,7 +33,7 @@ const NewsDetails = (props: Props) => {
         }
       }; 
 
-      const saveBookmark = as
+      const saveBookmark = async
     
     return (
         <>
