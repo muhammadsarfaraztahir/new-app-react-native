@@ -47,6 +47,7 @@ const NewsDetails = (props: Props) => {
             }
            } else {
             let bookmark = [];
+            bookmark.push(newsId);
            }
         })
       }
