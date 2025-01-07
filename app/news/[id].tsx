@@ -64,7 +64,7 @@ return (
             ),
             headerRight: () => (
                 <TouchableOpacity onPress={() => saveBookmark(news[0].article_id)}>
-                    <Ionicons name='heart-outline' size={22} />
+                    <Ionicons name={bookmark 'heart-outline'} size={22} />
                 </TouchableOpacity>
             ),
             title: "",
