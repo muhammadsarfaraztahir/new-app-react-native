@@ -59,7 +59,7 @@ const Page = (props: Props) => {
            {isLoading ? (
             <Loading size={'large'}/> 
            ) : (
-            <FlatList data={news} keyExtractor={(_, index) => `list_item${index}`} showsVerticalScrollIndicator={false} renderItem={(())=> {}} /> 
+            <FlatList data={news} keyExtractor={(_, index) => `list_item${index}`} showsVerticalScrollIndicator={false} renderItem={({})=> {}} /> 
            )}
         </View>
         </>
