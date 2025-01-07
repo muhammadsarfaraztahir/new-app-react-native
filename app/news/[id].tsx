@@ -34,7 +34,7 @@ const getNews = async () => {
     }
 };
 
-const saveBookmark = async(newsId: string) => {
+const saveBookmark = async (newsId: string) => {
     setBookmark(true);
     await AsyncStorage.getItem("bookmark").then((token) => {
         const res = JSON.parse(token);
@@ -54,11 +54,11 @@ const saveBookmark = async(newsId: string) => {
     });
 };
 
-const removeBookmark = async(newsId: string) => {
+const removeBookmark = async (newsId: string) => {
     setBookmark(false);
     const bookmark = await AsyncStorage.getItem("bookmark").then((token) => {
-      const res =JSON.parse(token);  
-      return res.filter((id: string) => id !== newsId); 
+        const res = JSON.parse(token);
+        return res.filter((id: string) => id !== newsId);
     });
     await AsyncStorage.setItem('bookmark', JSON.stringify(bookmark));
     alert("News unSaved!");
@@ -73,8 +73,11 @@ return (
                 </TouchableOpacity>
             ),
             headerRight: () => (
-                <TouchableOpacity onPress={() => bookmark ? removeBookmark(news[0].article_id) : saveBookmark(news[0].article_id)}>
-                    <Ionicons name={bookmark ? "heart" :'heart-outline'} size={22}  color={bookmark ? 'red' : Colors.black}/>
+                <TouchableOpacity onPress={() =>
+                    bookmark
+                        ? removeBookmark(news[0].article_id)
+                        : saveBookmark(news[0].article_id)}>
+                    <Ionicons name={bookmark ? "heart" : 'heart-outline'} size={22} color={bookmark ? 'red' : Colors.black} />
                 </TouchableOpacity>
             ),
             title: "",
