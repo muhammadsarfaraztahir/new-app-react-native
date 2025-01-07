@@ -23,8 +23,9 @@ const NewsDetails = (props: Props) => {
     }, []);
 
     useEffect(() => {
-        if( ! )
-        renderBookmark(news[0].article_id);
+        if (!isLoading) {
+            renderBookmark(news[0].article_id);
+        }
     }, [isLoading]);
 
     const getNews = async () => {
@@ -70,13 +71,13 @@ const NewsDetails = (props: Props) => {
         await AsyncStorage.setItem('bookmark', JSON.stringify(bookmark));
         alert("News unSaved!");
     };
-    const renderBookmark = async(newsId : string) => {
+    const renderBookmark = async (newsId: string) => {
         await AsyncStorage.getItem("bookmark").then((token) => {
             const res = JSON.parse(token);
-            if( res != null){
+            if (res != null) {
                 let data = res.find((value: string) => value === newsId);
                 return data == null ? setBookmark(false) : setBookmark(true);
-            } 
+            }
         }
     }
 
