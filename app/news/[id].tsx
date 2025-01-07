@@ -48,7 +48,7 @@ const NewsDetails = (props: Props) => {
            } else {
             let bookmark = [];
             bookmark.push(newsId);
-            AsyncStorage.setItem("bookmark", JSON.stringify(res));
+            AsyncStorage.setItem("bookmark", JSON.stringify(bookmark);
             alert("News Saved");
            }
         })
