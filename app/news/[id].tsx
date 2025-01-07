@@ -66,7 +66,8 @@ const NewsDetails = (props: Props) => {
         alert("News unSaved!");
     };
     const renderBookmark = async(newsId : string) => {
-        
+        await AsyncStorage.getItem("bookmark").then((token) => {
+            const res = JSON.parse(token);
     }
 
     return (
