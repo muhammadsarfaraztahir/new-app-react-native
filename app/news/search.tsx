@@ -68,7 +68,11 @@ const Page = (props: Props) => {
             keyExtractor={(_, index) => `list_item${index}`}
              showsVerticalScrollIndicator={false}
               renderItem={({ index, item }) => {
-            return <NewsItem item={item}/>;
+            return <Link href={`/new/${item.article_id}`} asChild key={index}>
+                        <TouchableOpacity>
+                          <NewsItem item={item} />
+                        </TouchableOpacity>
+                      </Link>
           }} />
         )}
       </View>
