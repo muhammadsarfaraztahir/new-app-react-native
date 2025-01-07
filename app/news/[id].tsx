@@ -22,6 +22,8 @@ const NewsDetails = (props: Props) => {
         getNews();
     }, []);
 
+    
+
     const getNews = async () => {
         try {
             const URL = `https://newsdata.io/api/1/news?apikey=${process.env.EXPO_PUBLIC_API_KEY}&id=${id}`;
