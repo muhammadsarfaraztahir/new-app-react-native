@@ -72,7 +72,7 @@ const NewsDetails = (props: Props) => {
         />
         {isLoading ? (
             <Loading size={'large'}/>
-        ):(
+        ) : (
             <ScrollView contentContainerStyle={styles.contentContainer} style={styles.container} >
            <Text style={styles.title}>{news[0].title}</Text>
                 <View style={styles.newsInfoWrapper}>
