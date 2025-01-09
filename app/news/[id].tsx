@@ -78,7 +78,7 @@ const NewsDetails = (props: Props) => {
                 let data = res.find((value: string) => value === newsId);
                 return data == null ? setBookmark(false) : setBookmark(true);
             }
-        }
+        })
     }
 
     return (
