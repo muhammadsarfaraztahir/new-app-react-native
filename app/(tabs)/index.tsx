@@ -153,6 +153,7 @@ import { useSafeAreaInsets } from "react-native-safe-area-context";
 import Categories from "@/components/Categories";
 import NewsList from "@/components/NewsList";
 import Loading from "@/components/Loading";
+import { SearchBar } from "react-native-screens";
 
 
 
