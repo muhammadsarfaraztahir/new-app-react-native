@@ -95,7 +95,7 @@ import Animated, {
   useDerivedValue,
   useSharedValue,
 } from "react-native-reanimated";
-import Pagination from "@/components/pagination";
+import Pagination from "@/components/Pagination";
 
 type Props = {
   newsList: Array<NewsDataType>;
