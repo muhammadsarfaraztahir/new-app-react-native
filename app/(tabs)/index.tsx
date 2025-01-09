@@ -155,6 +155,7 @@ import NewsList from "@/components/NewsList";
 import Loading from "@/components/Loading";
 
 
+
 type Props = {};
 
 const Page = (props: Props) => {
